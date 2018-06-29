@@ -1,0 +1,29 @@
+extends layoutBS
+
+block content
+
+  h1.jumbotron #{user.googlename}'s Group Page
+
+  form(method="post" action="saveGroup")
+    .formGroup
+      label Group Name
+      input(type="text" name="name")
+    .formGroup
+      label Email
+      input(type="text" name="hostemail" value=user.googleemail)
+    hr
+    input(type="submit" value = "Create Group") 
+  hr
+  h1 List of all groups
+  form(method="post" action="deleteGroup")
+    ol
+      each e in groups
+        li
+          input(name="groupID" value=e._id type="checkbox")
+          e #{e.name} created by 
+          e #{e.hostemail}
+    input(type="submit" value="Delete items")
+    hr
+  form(method="post" action="shareGroup")
+    label Share with
+    input(type="text" name="addedUser" value ="example@gmail.com")

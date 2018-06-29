@@ -1,8 +1,61 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("http://stockarch.com/files/14/07/wrinkled_paper.jpg");
+  background-size: auto;
+  background-repeat: repeat;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1{
+	font-size: 38px;
+}
+
+p{
+	font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.jumbotron {
+    background-image: url("https://previews.123rf.com/images/elenathewise/elenathewise1309/elenathewise130900014/22084982-brown-cork-board-background-surface-with-texture.jpg");
+    background-color: #17234E;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+form{
+	font-size: 18px;
 }
